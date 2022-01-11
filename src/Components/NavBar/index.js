@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function NavBar() {
     return (
-        <Navbar bg="light" variant="light" expand="md" fixed="top">
+        <Navbar bg="light" variant="light" expand="md">
             <Container>
                 <Navbar.Brand href="/">React Graph Tutorial</Navbar.Brand>
                 <Navbar.Toggle />
