@@ -78,6 +78,12 @@ Phone Number
 Search
 Find Location
 Donate
+.
+├── Logo # Compiled files (alternatively `dist`)
+├── Phone Number # Documentation files (alternatively `doc`)
+├── Search # Source files (alternatively `lib` or `app`)
+├── Find Location # Automated tests (alternatively `spec` or `tests`)
+└── Donate
 
 ## Subheader
 
