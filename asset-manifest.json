@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/vrra-remake/static/css/main.ef649fbe.css",
-    "main.js": "/vrra-remake/static/js/main.9455d0ef.js",
+    "main.js": "/vrra-remake/static/js/main.5dccead6.js",
     "static/js/787.881b6345.chunk.js": "/vrra-remake/static/js/787.881b6345.chunk.js",
     "static/media/logo.svg": "/vrra-remake/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/vrra-remake/index.html",
     "main.ef649fbe.css.map": "/vrra-remake/static/css/main.ef649fbe.css.map",
-    "main.9455d0ef.js.map": "/vrra-remake/static/js/main.9455d0ef.js.map",
+    "main.5dccead6.js.map": "/vrra-remake/static/js/main.5dccead6.js.map",
     "787.881b6345.chunk.js.map": "/vrra-remake/static/js/787.881b6345.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef649fbe.css",
-    "static/js/main.9455d0ef.js"
+    "static/js/main.5dccead6.js"
   ]
 }
