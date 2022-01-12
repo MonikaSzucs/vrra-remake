@@ -91,7 +91,7 @@ export default function NavBar() {
                     bgcolor: 'background.paper',
                     transform: 'translateY(-50%) rotate(45deg)',
                     zIndex: 0,
-                    },
+                    }, 
                 },
                 }}
                 transformOrigin={{ horizontal: 'right', vertical: 'top' }}
