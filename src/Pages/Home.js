@@ -56,13 +56,19 @@ export default function Home() {
                     <Grid item xs={0} md={1}></Grid>
                 </Grid>
             </div>
-            <div>
-                <Grid container>
+            <div style={{ marginTop: "2vh", marginBottom: "2vh" }}>
+                <Grid container >
                     <Grid item xs={0} md={1}></Grid>
-                    <Grid item xs={12} md={10}>
+                    <Grid item xs={12} md={10} >
                         <Grid container>
                             {images.map( image => (
-                                <Grid item md={3} sx={{ pt: 5, pb: 1  }}>
+                                <Grid item md={3} >
+                                    <Img key={image.id} image={image} />
+                                </Grid>
+                                )
+                            )}
+                            {images.map( image => (
+                                <Grid item md={3} >
                                     <Img key={image.id} image={image} />
                                 </Grid>
                                 )
