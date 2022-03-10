@@ -22,10 +22,10 @@ export default function NavBar() {
                         <RouterNavLink to="/" className="nav-link" exact>Donate</RouterNavLink>
                     </NavItem>
                     <NavItem>
-                        <RouterNavLink to="/Pages/Store" className="nav-link" exact>Donate</RouterNavLink>
+                        <RouterNavLink to="/Store" className="nav-link" exact>Donate</RouterNavLink>
                     </NavItem>
                     <NavItem>
-                        <RouterNavLink to="/Pages/Store" className="nav-link" exact>About</RouterNavLink>
+                        <RouterNavLink to="/About" className="nav-link" exact>About</RouterNavLink>
                     </NavItem>
                 </Nav>
                 </Navbar.Collapse>
