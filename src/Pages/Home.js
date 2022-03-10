@@ -28,16 +28,16 @@ export default function Home() {
       ];
 
       const images = [
-        { id: 1, path: require( "../Assets/Images/RecentArrivals/Brooke.jpeg" ) },
-        { id: 2, path: require( "../Assets/Images/RecentArrivals/Brooke.jpeg" ) },
-        { id: 3, path: require( "../Assets/Images/RecentArrivals/Brooke.jpeg" ) },
-        { id: 4, path: require( "../Assets/Images/RecentArrivals/Brooke.jpeg" ) },
+        { id: 11, path: require( "../Assets/Images/RecentArrivals/Brooke.jpg" ), name: "Booke" },
+        { id: 12, path: require( "../Assets/Images/RecentArrivals/Greg.jpg" ), name: "Greg" },
+        { id: 13, path: require( "../Assets/Images/RecentArrivals/HarperAndRider.jpg" ), name: "Harper & Rider" },
+        { id: 14, path: require( "../Assets/Images/RecentArrivals/OllieAndTwix.jpeg" ), name: "Ollie & Twix" },
       ];
     
       const Img = ( { image } ) => (
-        <div>
-          <p>{image.id}</p>
-          <img width="100" src={image.path} />
+        <div style={{ textAlign:"center" }}>
+          <img width="100%" src={image.path} />
+          <h4>{image.name}</h4>
         </div>
       );
 
@@ -60,29 +60,20 @@ export default function Home() {
                 <Grid container>
                     <Grid item xs={0} md={1}></Grid>
                     <Grid item xs={12} md={10}>
-                        <Grid container >
-                            <Grid item md={3} >
-                                <Paper sx={{ m:2 }}>Brooke</Paper>
-                            </Grid>
-                            <Grid item md={3}>
-                                <Paper sx={{ m:2 }}>Greg</Paper>
-                            </Grid>
-                            <Grid item md={3}>
-                                {state.map((item) => (
-                                    <tr key={item.id}>
+                        <Grid container>
+                            {images.map( image => (
+                                <Grid item md={3} sx={{ pt: 5, pb: 1  }}>
+                                    <Img key={image.id} image={image} />
+                                </Grid>
+                                )
+                            )}
+                            {state.map((item) => (
+                                <tr key={item.id}>
                                     {Object.values(item).map((val) => (
                                         <td>{val}</td>
                                     ))}
-                                    </tr>
-                                ))}
-                            </Grid>
-                            <Grid item md={3}>
-                                {
-                                    images.map( image => (
-                                    <Img key={image.id} image={image} />
-                                    ) )
-                                }
-                            </Grid>
+                                </tr>
+                            ))}
                         </Grid>
                     </Grid>
                     <Grid item xs={0} md={1}></Grid>
