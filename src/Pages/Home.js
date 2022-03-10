@@ -17,7 +17,31 @@ const styles = {
     }
 };
 
+
+
 export default function Home() {
+    const initState = [
+        { id: 1, name: "bread", quantitiy: 50, location: "cupboard" },
+        { id: 2, name: "milk", quantitiy: 20, location: "fridge" },
+        { id: 3, name: "water", quantitiy: 10, location: "fridge" },
+        { id: 4, name: "rice", quantitiy: 10, location: "pantry" }
+      ];
+
+      const images = [
+        { id: 1, path: require( "../Assets/Images/RecentArrivals/Brooke.jpeg" ) },
+        { id: 2, path: require( "../Assets/Images/RecentArrivals/Brooke.jpeg" ) },
+        { id: 3, path: require( "../Assets/Images/RecentArrivals/Brooke.jpeg" ) },
+        { id: 4, path: require( "../Assets/Images/RecentArrivals/Brooke.jpeg" ) },
+      ];
+    
+      const Img = ( { image } ) => (
+        <div>
+          <p>{image.id}</p>
+          <img width="100" src={image.path} />
+        </div>
+      );
+
+    const [state, setState] = React.useState(initState);
     return (
         <div>
             <div style={styles.BackgroundHeader}>
@@ -38,16 +62,26 @@ export default function Home() {
                     <Grid item xs={12} md={10}>
                         <Grid container >
                             <Grid item md={3} >
-                                <Paper sx={{ m:2 }}>1</Paper>
+                                <Paper sx={{ m:2 }}>Brooke</Paper>
                             </Grid>
                             <Grid item md={3}>
-                                <Paper sx={{ m:2 }}>2</Paper>
+                                <Paper sx={{ m:2 }}>Greg</Paper>
                             </Grid>
                             <Grid item md={3}>
-                                <Paper sx={{ m:2 }}>3</Paper>
+                                {state.map((item) => (
+                                    <tr key={item.id}>
+                                    {Object.values(item).map((val) => (
+                                        <td>{val}</td>
+                                    ))}
+                                    </tr>
+                                ))}
                             </Grid>
                             <Grid item md={3}>
-                                <Paper sx={{ m:2 }}>4</Paper>
+                                {
+                                    images.map( image => (
+                                    <Img key={image.id} image={image} />
+                                    ) )
+                                }
                             </Grid>
                         </Grid>
                     </Grid>
