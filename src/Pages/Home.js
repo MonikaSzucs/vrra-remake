@@ -44,18 +44,6 @@ export default function Home() {
     const [state, setState] = React.useState(initState);
     return (
         <div>
-            <div style={styles.BackgroundHeader}>
-                <Grid container>
-                    <Grid item xs={0} md={1}></Grid>
-                    <Grid item xs={12} md={10}>
-                        <Typography component="div" style={{ color: "white" }}>
-                            <Box sx={{ fontSize: 'h3.fontSize', pt: 18, pb: 1  }} style={{  }}>Vancouver Rabbit Rescue Association</Box>
-                            <Box sx={{ fontSize: 'h6.fontSize', }}>A Chapter of the House Rabbit Society</Box>
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={0} md={1}></Grid>
-                </Grid>
-            </div>
             <div style={{ marginTop: "2vh", marginBottom: "2vh" }}>
                 <Grid container >
                     <Grid item xs={0} md={1}></Grid>
